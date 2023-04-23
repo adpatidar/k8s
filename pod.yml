@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
+  name: todo
 spec:
   containers:
-  - name: nginx
-    image: nginx:1.14.2
+  - name: todo
+    image: trainwithshubham/node-todo-app-cicd:latest
     ports:
-    - containerPort: 80
+    - containerPort: 8000
